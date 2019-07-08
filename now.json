@@ -1,1 +1,12 @@
-{"version":2,"name":"apartment-notifier","builds":[{"src":"**/*.py","use":"@now/python"},{"src":"css/**","use":"@now/static"}]}
+{
+    "version": 2,
+    "name": "apartment-notifier",
+    "builds": [{
+        "src": "**/*.py",
+        "use": "@now/python"
+    }],
+    "routes": [{
+        "src": "(.*)",
+        "dest": "index.py"
+    }]
+}
